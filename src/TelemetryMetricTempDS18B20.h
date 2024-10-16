@@ -28,10 +28,12 @@ protected:
 public:
   TelemetryMetricTempDS18B20(
     uint8_t pin,
+    String targetName,
     String topicMqttBase,
     bool retainEventMessages,
     uint8_t qosEventMessages)
     : TelemetryMetricReporter( // call super constructor
+      targetName,
       topicMqttBase, 
       retainEventMessages, 
       qosEventMessages) {

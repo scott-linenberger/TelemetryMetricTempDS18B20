@@ -22,6 +22,7 @@ TelemetryNode telemNode = TelemetryNode(
 
 TelemetryMetricTempDS18B20 metricTemp = TelemetryMetricTempDS18B20(
   13,
+  "temp", // target name
   "telem-node-weather-unit", // the base topic for telemetry information
   true, // mqtt message retain - outgoing messages
   0); // mqtt message qos - outgoing messages
